@@ -18,4 +18,3 @@ Tests:
 - AATT gives back TTAA
 - CCGG gives back GGCC
 - CAGT gives back GTCA
-- CVDTASG gives back GVDATSC

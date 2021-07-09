@@ -25,4 +25,7 @@ describe("DNA Strand", () => {
   it("Should flip CCGG to GGCC", () => {
     expect(DNAStrand("CCGG")).toBe("GGCC");
   });
+  it("Should flip CAGT to GTCA", () => {
+    expect(DNAStrand("CAGT")).toBe("GTCA");
+  });
 });
