@@ -14,4 +14,8 @@ describe("DNA Strand", ()=>{
         expect(DNAStrand('T')).toBe('A');
     })
 
+    it("Should flip C to G", () => {
+        expect(DNAStrand('C')).toBe('G');
+    })
+
 })
