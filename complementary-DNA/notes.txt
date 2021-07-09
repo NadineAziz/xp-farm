@@ -1,0 +1,21 @@
+Complementary DNA
+
+In DNA strings, symbols "A" and "T" are complements of each 
+other, as "C" and "G". You have function with one side of the DNA 
+you need to get the other complementary side. DNA strand is never empty 
+or there is no DNA at all.
+
+Rules:
+A -> T
+C -> G
+
+Tests:
+- letter gives back same letter
+- A gives back T
+- T gives back A
+- C gives back G
+- G gives back C
+- AATT gives back TTAA
+- CCGG gives back GGCC
+- CAGT gives back GTCA
+- CVDTASG gives back GVDATSC
