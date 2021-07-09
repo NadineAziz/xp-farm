@@ -5,6 +5,8 @@ function DNAStrand(dna) {
     return dna.replace(dna, "A");
   } else if (dna === "C") {
     return dna.replace(dna, "G");
+  } else if (dna === "G") {
+    return dna.replace(dna, "C");
   }
 
   return dna;
