@@ -44,4 +44,9 @@ describe("Highest Scoring Word", () => {
       expect(highestScoringWord("abvjcsbba")).toBe(11);
     });
   });
+  describe("Should include sentences with space", () => {
+    it("Should take sentence 'xp farm' returning farm", () => {
+      expect(highestScoringWord("xp farm")).toBe("farm");
+    });
+  });
 });
