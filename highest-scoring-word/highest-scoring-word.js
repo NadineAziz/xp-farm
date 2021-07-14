@@ -1,7 +1,10 @@
 function highestScoringWord(word) {
-  let sum = 0;
-  if (word === "a") sum = 1;
-  console.log(sum);
+  let suma = 0;
+  let sumb = 0;
+  if (word === "a") suma = 1;
+  if (word === "b") sumb = 2;
+  console.log(suma);
+  console.log(sumb);
   return word;
 }
 
