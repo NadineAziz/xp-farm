@@ -6,6 +6,7 @@ First Pomodoro:
 - Implement basic functionality of highestScoringWord
 - Implement sums of each letter
 **refactoring if needed**
+✅  On Time with exactly tasks planned to be done 👍
 
 Second Pomodoro:
 - Implement counter for each word
