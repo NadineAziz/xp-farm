@@ -35,4 +35,6 @@ Should include other letters:
 
 Should include sentences with space
 - 'xp farm' gives back 'farm'
-- 'take me to switzerland' gives back 'take'
+- 'man i need a taxi up to ubud' gives back 'taxi'
+- 'what time are we climbing up the volcano' 'volcano'
+- 'take me to semynak' gives back 'semynak' 
