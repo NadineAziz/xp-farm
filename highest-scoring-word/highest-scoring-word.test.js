@@ -22,14 +22,17 @@ describe("Highest Scoring Word", () => {
     });
   });
   describe("Should give back an accumulative counter of each letter", () => {
-    it("Should take letter aaa returning 3", () => {
+    it("Should take characters aaa returning 3", () => {
       expect(highestScoringWord("aaa")).toBe(3);
     });
-    it("Should take letter bbb returning 6", () => {
+    it("Should take characters bbb returning 6", () => {
       expect(highestScoringWord("bbb")).toBe(6);
     });
-    it("Should take letter ccc returning 9", () => {
+    it("Should take characters ccc returning 9", () => {
       expect(highestScoringWord("ccc")).toBe(9);
+    });
+    it("Should take characters abc returning 6", () => {
+      expect(highestScoringWord("abc")).toBe(6);
     });
   });
 });
