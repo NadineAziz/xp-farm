@@ -1,0 +1,14 @@
+Pomodoros
+
+First Pomodoro:
+- Set up environment
+- Initialize notes and Tests
+- Implement basic functionality of highestScoringWord
+- Implement sums of each letter
+**refactoring if needed**
+
+Second Pomodoro:
+- Implement counter for each word
+- Implement search algorithm and returning max word
+- Fine tuning
+**refactoring if needed**
