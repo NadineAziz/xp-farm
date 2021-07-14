@@ -1,0 +1,38 @@
+Highest Scoring Word
+
+
+Given a string of words, find the highest scoring word.(Search)
+
+Each letter of a word scores points according to its position in the alphabet: a = 1, b = 2, c = 3 etc.
+
+Return the highest scoring word as a string.
+
+Additional Comments:
+
+- If two words score the same, return the word that appears earliest in the original string.
+
+- All letters will be lowercase and all inputs will be valid.
+
+
+Tests
+
+Basic Test:
+- letter gives back same letter
+
+Should give back sum of each letter:
+- 'a' gives back 1
+- 'b' gives back 2
+- 'c' gives back 3
+
+Should give back counter of each letter
+- 'aaa' gives back 3
+- 'bbb' gives back 6
+- 'ccc' gives back 9
+- 'abc' gives back 6
+
+Should include other letters:
+- 'abvjcsbba' gives back 11
+
+Should include sentences with space
+- 'xp farm' gives back 'farm'
+- 'take me to switzerland' gives back 'take'
