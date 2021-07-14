@@ -1,9 +1,15 @@
 function highestScoringWord(word) {
-  let sum = 0;
-  if (word === "a") return (sum = 1);
-  if (word === "b") return (sum = 2);
-  if (word === "c") return (sum = 3);
-  return sum;
+  let counter = 0;
+  for (let i in word) {
+    if (word[i] === "a") {
+      counter += 1;
+    } else if (word[i] === "b") {
+      counter += 2;
+    } else if (word[i] === "c") {
+      counter += 3;
+    }
+  }
+  return counter;
 }
 
 function consoleLogging(sum) {
