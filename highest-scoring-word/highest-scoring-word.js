@@ -2,7 +2,6 @@ function highestScoringWord(word) {
   const strings = word.split(" ");
   let map = new Map();
   let counter = 0;
-  let max = 0;
 
   for (let i in strings) {
     if (strings[i].includes("a")) {
