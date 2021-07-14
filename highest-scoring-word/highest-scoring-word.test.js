@@ -11,5 +11,8 @@ describe("Highest Scoring Word", () => {
     it("Should take letter a and on console print 1, return a", () => {
       expect(highestScoringWord("a")).toBe("a");
     });
+    it("Should take letter b and on console print 2, return b", () => {
+      expect(highestScoringWord("b")).toBe("b");
+    });
   });
 });
