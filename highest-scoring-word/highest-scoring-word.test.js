@@ -40,5 +40,8 @@ describe("Highest Scoring Word", () => {
     it("Should take characters f returning 0", () => {
       expect(highestScoringWord("f")).toBe(0);
     });
+    it("Should take characters abvjcsbba returning 11", () => {
+      expect(highestScoringWord("abvjcsbba")).toBe(11);
+    });
   });
 });
