@@ -35,4 +35,10 @@ describe("Highest Scoring Word", () => {
       expect(highestScoringWord("abc")).toBe(6);
     });
   });
+
+  describe("Should include other letters word", () => {
+    it("Should take characters f returning 0", () => {
+      expect(highestScoringWord("f")).toBe(0);
+    });
+  });
 });
