@@ -3,3 +3,4 @@ Pomodoro - 1:
 - Readme.md
 - set up env
 - set up board
+- Draw board
