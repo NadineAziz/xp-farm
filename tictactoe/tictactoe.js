@@ -16,6 +16,7 @@ function Game(board) {
         board[movePosition] = switchPlayersCharacters(player);
 
         player += 1;
+        state = isStillOnPlay(board);
 
     return board;
     }
@@ -66,6 +67,26 @@ function switchPlayersTurns(player) {
     }
 }
 
+function isStillOnPlay(board){
+    if (isColumnFinished(board) || isRowFinished(board) || isDiagonalFinished(board))
+        return true
+    else if (isComplete(board))
+        return false
+    else
+        return false;
+}
+
+function isComplete(board){
+    let isComplete = true;
+    for (let i = 0; i < board.length; i++) {
+        if (typeof(board[i]) === 'number') {
+             isComplete = false
+        };
+    };
+
+    return isComplete
+}
+
 function isRowFinished(board){
     if (board[0] == board[1] && board[1] == board[2])
     return true;
@@ -105,5 +126,6 @@ module.exports = {
     randomPosition,
     isRowFinished,
     isColumnFinished,
-    isDiagonalFinished
+    isDiagonalFinished,
+    isStillOnPlay
   };

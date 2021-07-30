@@ -5,7 +5,8 @@ const { Game,
         randomPosition,
         isRowFinished,
         isColumnFinished,
-        isDiagonalFinished } = require("./tictactoe");
+        isDiagonalFinished,
+        isStillOnPlay } = require("./tictactoe");
 
 describe("TicTacToe", () => {
     describe('Board and Draw Board', () => {
@@ -111,7 +112,14 @@ describe("TicTacToe", () => {
         it("Should return true if the game has ended with a win", () => {
                 testBoard = ['X','X','X','','','','','',''];
                 expect(isStillOnPlay(testBoard)).toEqual(true);
-              });
+        });
+
+        it("Should return false if the game has ended with a draw", () => {
+            testBoard = ['X','X','O',
+                        'O','O','X',
+                        'X','O','X'];
+            expect(isStillOnPlay(testBoard)).toEqual(false);
+        });
     
     })
 
