@@ -13,3 +13,12 @@ Pomodoro - 2:
 
 If there is time:
 - Random placement function (followed up to the next Pomodoro)
+
+Pomodoro - 3:
+- Random placement function
+- Check if the game is still going on
+- Check for win cases:
+    Row
+    Column
+    Diagonal
+Refactor if needed
