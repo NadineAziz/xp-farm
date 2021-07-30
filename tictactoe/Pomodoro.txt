@@ -1,0 +1,5 @@
+Pomodoro - 1:
+- notes: planning and some basic tests
+- Readme.md
+- set up env
+- set up board
