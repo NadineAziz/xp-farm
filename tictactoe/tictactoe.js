@@ -1,10 +1,15 @@
 let board = [0,1,2,3,4,5,6,7,8];
 function Game(board) {
+    player = 1;
+
+    if(player === 1)
+        char = 'X'
+    else
+        char = 'O'
+
     console.log(drawBoard(board));
     return board;
 }
-
-
 function drawBoard(board){
     const newBoard = board.map(x => prettyPrint(x));
     return `        |  ${newBoard[0]}  |  ${newBoard[1]}  |  ${newBoard[2]} \n
@@ -27,5 +32,6 @@ function prettyPrint(cell){
 Game(board);
 module.exports = {
     Game,
-    drawBoard 
+    drawBoard,
+    player
   };

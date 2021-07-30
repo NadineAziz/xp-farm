@@ -1,6 +1,15 @@
 Pomodoro - 1:
-- notes: planning and some basic tests
-- Readme.md
-- set up env
-- set up board
-- Draw board
+- notes: planning and some basic tests (DONE)
+- Readme.md (DONE)
+- set up env (DONE)
+- set up board (DONE)
+- Draw board (DONE)
+
+Pomodoro - 2:
+- fix draw board tests
+- set players turns
+- set players characters
+- NOTE: IT'S A BOT playing as two players
+
+If there is time:
+- Random placement function
