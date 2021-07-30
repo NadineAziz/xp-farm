@@ -98,6 +98,21 @@ describe("TicTacToe", () => {
                          'O','X','X']
             expect(isDiagonalFinished(testBoard)).toEqual(true);
         });
+        it('Should return true when won by a diagonal with O', () => {
+            testBoard = ['X','O','O',
+                         '','O','O',
+                         'O','X','X']
+            expect(isDiagonalFinished(testBoard)).toEqual(true);
+        });  
+    });
+
+    describe('Game Ongoing', () => {
+        
+        it("Should return true if the game has ended with a win", () => {
+                testBoard = ['X','X','X','','','','','',''];
+                expect(isStillOnPlay(testBoard)).toEqual(true);
+              });
+    
     })
 
 });

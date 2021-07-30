@@ -1,17 +1,24 @@
 let board = [0,1,2,3,4,5,6,7,8];
 let player = 1;
 let movePosition;
+let state = false;
 
 function Game(board) {
 
-    switchPlayersTurns(player);
-    movePosition = randomPosition(board);
+    while( state === false){
+        drawBoard(board);
 
-    board[movePosition] = switchPlayersCharacters(player);
+        switchPlayersTurns(player);
+        
+        console.log(`Player ${player}`);
+        movePosition = randomPosition(board);
 
-    player += 1;
-    // /console.log(drawBoard(board));
+        board[movePosition] = switchPlayersCharacters(player);
+
+        player += 1;
+
     return board;
+    }
 }
 
 // Added x-1 because it should not exceed out of the 9th position
