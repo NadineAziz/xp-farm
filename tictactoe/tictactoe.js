@@ -6,8 +6,12 @@ function Game(board) {
 
     switchPlayersCharacters(player);
 
-    console.log(drawBoard(board));
+    // /console.log(drawBoard(board));
     return board;
+}
+
+function randomPosition(board){
+    return Math.round(Math.random() * board.length);
 }
 function switchPlayersTurns(player) {
     if(player%2 === 1)
@@ -52,5 +56,6 @@ module.exports = {
     drawBoard,
     player,
     switchPlayersTurns,
-    switchPlayersCharacters
+    switchPlayersCharacters,
+    randomPosition
   };

@@ -1,4 +1,8 @@
-const { Game, drawBoard,switchPlayersTurns,switchPlayersCharacters } = require("./tictactoe");
+const { Game, 
+        drawBoard,
+        switchPlayersTurns,
+        switchPlayersCharacters,
+        randomPosition } = require("./tictactoe");
 
 describe("TicTacToe", () => {
     describe('Board and Draw Board', () => {
@@ -31,7 +35,21 @@ describe("TicTacToe", () => {
 
           it("Should return player character of player 2: O", () => {
             expect(switchPlayersCharacters(2)).toEqual('O');
-        })
-    })
+        });
+    });
+
+    describe('Game players', () => {
+        it("Should return a random position on the board", () => {
+            testBoard = ['','','','','','','','',''];
+            var reg = new RegExp('[0-8]');
+            reg.test(randomPosition(testBoard));
+          });
+
+        it("Should return a random position on the board only if the position is empty", () => {
+            testBoard = ['','X','','O','','X','','',''];
+            var reg = new RegExp('[0-8]');
+            reg.test(randomPosition(testBoard));
+          });
+    });
 
 });
