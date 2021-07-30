@@ -91,6 +91,12 @@ describe("TicTacToe", () => {
                          'O','X','X']
             expect(isColumnFinished(testBoard)).toEqual(true);
         });
+        it('Should return true when won by a diagonal with X', () => {
+            testBoard = ['X','O','X',
+                         '','X','O',
+                         'O','X','X']
+            expect(isDiagonalFinished(testBoard)).toEqual(true);
+        });
     })
 
 });
