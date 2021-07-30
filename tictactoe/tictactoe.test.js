@@ -4,7 +4,8 @@ const { Game,
         switchPlayersCharacters,
         randomPosition,
         isRowFinished,
-        isColumnFinished } = require("./tictactoe");
+        isColumnFinished,
+        isDiagonalFinished } = require("./tictactoe");
 
 describe("TicTacToe", () => {
     describe('Board and Draw Board', () => {

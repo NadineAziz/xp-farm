@@ -80,7 +80,14 @@ function isColumnFinished(board){
     
     return false
 }
-
+function isDiagonalFinished(board){
+    if (board[0] == board[4] && board[4] == board[8])
+        return true
+    if (board[2] == board[4] && board[4] == board[6])
+        return true
+    
+    return false
+}
 Game(board);
 module.exports = {
     Game,
@@ -90,5 +97,6 @@ module.exports = {
     switchPlayersCharacters,
     randomPosition,
     isRowFinished,
-    isColumnFinished
+    isColumnFinished,
+    isDiagonalFinished
   };
