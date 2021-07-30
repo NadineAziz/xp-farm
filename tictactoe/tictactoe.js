@@ -1,5 +1,5 @@
-function Game() {
-    let board = [0,1,2,3,4,5,6,7,8];
+let board = [0,1,2,3,4,5,6,7,8];
+function Game(board) {
     console.log(drawBoard(board));
     return board;
 }
@@ -24,7 +24,7 @@ function prettyPrint(cell){
     }
 }
 
-Game();
+Game(board);
 module.exports = {
     Game,
     drawBoard 
