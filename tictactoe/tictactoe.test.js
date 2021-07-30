@@ -25,9 +25,13 @@ describe("TicTacToe", () => {
             expect(switchPlayersTurns(1)).toEqual(1);
           });
 
-          it("Should return player character", () => {
+          it("Should return player character of player 1: X", () => {
               expect(switchPlayersCharacters(1)).toEqual('X');
-          })
+          });
+
+          it("Should return player character of player 2: O", () => {
+            expect(switchPlayersCharacters(2)).toEqual('O');
+        })
     })
 
 });

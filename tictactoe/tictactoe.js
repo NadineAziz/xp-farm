@@ -1,11 +1,10 @@
 let board = [0,1,2,3,4,5,6,7,8];
 let player = 1;
-let char;
 function Game(board) {
 
     switchPlayersTurns(player);
 
-    switchPlayersCharacters(char);
+    switchPlayersCharacters(player);
 
     console.log(drawBoard(board));
     return board;
@@ -19,7 +18,8 @@ function switchPlayersTurns(player) {
      return player;
  }
 
- function switchPlayersCharacters(char){
+ function switchPlayersCharacters(player){
+    let char;
     if(player === 1)
         char = 'X'
     else
