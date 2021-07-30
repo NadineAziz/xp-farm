@@ -2,16 +2,17 @@ const { Game,
         drawBoard,
         switchPlayersTurns,
         switchPlayersCharacters,
-        randomPosition } = require("./tictactoe");
+        randomPosition,
+        isRowFinished } = require("./tictactoe");
 
 describe("TicTacToe", () => {
     describe('Board and Draw Board', () => {
-        it("Board - Gives an Empty Board", () => {
-            expect(Game([])).toEqual([]);
-          });
-          it("Board - Gives a board with empty values", () => {
-            expect(Game([0,1,2,3,4,5,6,7,8])).toEqual([0,1,2,3,4,5,6,7,8]);
-          });
+        // it("Board - Gives an Empty Board", () => {
+        //     expect(Game([])).toEqual([]);
+        //   });
+        //   it("Board - Gives a board with empty values", () => {
+        //     expect(Game([0,1,2,3,4,5,6,7,8])).toEqual([0,1,2,3,4,5,6,7,8]);
+        //   });
         
         // it("Draw board - draw board as a tictactoe board", () => {
         //         testBoard = ['','','','','','','','','']
@@ -54,7 +55,7 @@ describe("TicTacToe", () => {
 
     describe('Win State', () => {
         it('Should return true when either players win in by a row', () => {
-            testBoard = []
+            testBoard = ['X','X','X','','','O','O']
             expect(isRowFinished(testBoard)).toEqual(true);
         })
     })

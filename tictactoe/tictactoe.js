@@ -7,9 +7,7 @@ function Game(board) {
     switchPlayersTurns(player);
     movePosition = randomPosition(board);
 
-    switchPlayersCharacters(player);
-
-    board[movePosition] = char;
+    board[movePosition] = switchPlayersCharacters(player);
 
     player += 1;
     // /console.log(drawBoard(board));
@@ -61,6 +59,17 @@ function switchPlayersTurns(player) {
     }
 }
 
+function isRowFinished(board){
+    if (board[0] == board[1] && board[1] == board[2])
+    return true;
+    if (board[3] == board[4] && board[4] == board[5])
+        return true;
+    if (board[6] == board[7] && board[7] == board[8])
+        return true;
+
+    return false;
+}
+
 Game(board);
 module.exports = {
     Game,
@@ -68,5 +77,6 @@ module.exports = {
     player,
     switchPlayersTurns,
     switchPlayersCharacters,
-    randomPosition
+    randomPosition,
+    isRowFinished
   };
