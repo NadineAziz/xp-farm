@@ -10,8 +10,15 @@ function Game(board) {
     return board;
 }
 
+// Added x-1 because it should not exceed out of the 9th position
 function randomPosition(board){
-    return Math.round(Math.random() * board.length);
+    let x = Math.round(Math.random() * board.length);
+
+    while( typeof(board[x-1]) === 'string'){
+        x = Math.round(Math.random() * board.length)
+    };
+
+    return x-1;
 }
 function switchPlayersTurns(player) {
     if(player%2 === 1)
