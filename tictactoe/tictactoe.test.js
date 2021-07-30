@@ -1,4 +1,4 @@
-const { Game, drawBoard,switchPlayers } = require("./tictactoe");
+const { Game, drawBoard,switchPlayersTurns } = require("./tictactoe");
 
 describe("TicTacToe", () => {
     describe('Board and Draw Board', () => {
@@ -22,7 +22,12 @@ describe("TicTacToe", () => {
 
     describe('Game players', () => {
         it("Should return which player turn is it", () => {
-            expect(switchPlayers(1)).toEqual(1);
+            expect(switchPlayersTurns(1)).toEqual(1);
           });
+
+          it("Should return player character", () => {
+              expect(switchPlayersCharacters(1)).toEqual('X');
+          })
     })
+
 });
