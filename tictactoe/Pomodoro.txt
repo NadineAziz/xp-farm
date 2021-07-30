@@ -6,10 +6,10 @@ Pomodoro - 1:
 - Draw board (DONE)
 
 Pomodoro - 2:
-- fix draw board tests
-- set players turns
-- set players characters
+- fix draw board tests(Done)
+- set players turns (Done)
+- set players characters (Done)
 - NOTE: IT'S A BOT playing as two players
 
 If there is time:
-- Random placement function
+- Random placement function (followed up to the next Pomodoro)
