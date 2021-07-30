@@ -1,11 +1,17 @@
 let board = [0,1,2,3,4,5,6,7,8];
 let player = 1;
+let movePosition;
+
 function Game(board) {
 
     switchPlayersTurns(player);
+    movePosition = randomPosition(board);
 
     switchPlayersCharacters(player);
 
+    board[movePosition] = char;
+
+    player += 1;
     // /console.log(drawBoard(board));
     return board;
 }
@@ -38,8 +44,7 @@ function switchPlayersTurns(player) {
     
     return char;
  }
-
-function drawBoard(board){
+ function drawBoard(board){
     const newBoard = board.map(x => prettyPrint(x));
     return `        |  ${newBoard[0]}  |  ${newBoard[1]}  |  ${newBoard[2]} \n
         ----------- \n
@@ -48,8 +53,7 @@ function drawBoard(board){
         |  ${newBoard[6]}  | ${newBoard[7]}   | ${newBoard[8]} \n
     `               
 }
-
-function prettyPrint(cell){
+ function prettyPrint(cell){
     if (typeof(cell) === 'number'){
         return '';
     } else {

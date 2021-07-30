@@ -52,4 +52,11 @@ describe("TicTacToe", () => {
           });
     });
 
+    describe('Win State', () => {
+        it('Should return true when either players win in by a row', () => {
+            testBoard = []
+            expect(isRowFinished(testBoard)).toEqual(true);
+        })
+    })
+
 });
