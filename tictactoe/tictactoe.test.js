@@ -67,12 +67,30 @@ describe("TicTacToe", () => {
                         ,'','','']
             expect(isRowFinished(testBoard)).toEqual(true);
         });
+        it('Should return true when won by a row with X', () => {
+            testBoard = ['O','X','X',
+                         'O','','O',
+                         'X','X','X']
+            expect(isRowFinished(testBoard)).toEqual(true);
+        });
         it('Should return true when won by a column with X', () => {
             testBoard = ['X','','',
                          'X','O','O',
                          'X','','']
             expect(isColumnFinished(testBoard)).toEqual(true);
-        })
+        });
+        it('Should return true when won by a column with O', () => {
+            testBoard = ['X','O','',
+                         '','O','O',
+                         'X','O','X']
+            expect(isColumnFinished(testBoard)).toEqual(true);
+        });
+        it('Should return true when won by a column with X', () => {
+            testBoard = ['X','O','X',
+                         '','O','X',
+                         'O','X','X']
+            expect(isColumnFinished(testBoard)).toEqual(true);
+        });
     })
 
 });
