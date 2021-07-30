@@ -1,4 +1,4 @@
-const { Game, drawBoard,switchPlayersTurns } = require("./tictactoe");
+const { Game, drawBoard,switchPlayersTurns,switchPlayersCharacters } = require("./tictactoe");
 
 describe("TicTacToe", () => {
     describe('Board and Draw Board', () => {
