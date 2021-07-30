@@ -1,0 +1,53 @@
+Tic-tac-toe UAT Scenarios
+- Game Board Creation phase
+- Player X won with a vertical line
+- Player O won with a horizontal line
+- Player X won with a diagonal line
+- Game ends with a draw
+
+Possible Tests:
+Game Board Creation phase:
+Input: Empty Board
+Output: Print Board
+
+Player X won with a vertical line:
+Input: [ X,'',''
+        ,X,O,'',
+         X, '', '']
+Output: Player X won
+
+Input: [ O,O,O
+        ,'',O,'',
+         X, '', X]
+Output: Player O won
+
+
+- Player O won with a horizontal line
+Input: [ '','',''
+        ,O,O,'',
+         X, X, X]
+Output: Player X won
+
+Input: [ X,'',''
+        ,O,O,O,
+         X, '', X]
+Output: Player O won
+
+- Player X won with a diagonal line
+Input: [ X,'',O
+        ,O,X,'',
+         '', X, X]
+Output: Player X won
+
+Input: [ X,'',O
+        ,'',O,O,
+         O, '', X]
+Output: Player O won
+
+ Game ends with a draw
+
+ Input: [
+      O,X,O
+     ,X,O,X,
+      X,O, X]
+Output: GAME ENDS WITH A DRAW!
