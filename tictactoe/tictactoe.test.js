@@ -1,7 +1,10 @@
 const { Game } = require("./tictactoe");
 
 describe("TicTacToe", () => {
-  it("Empty Board", () => {
+  it("Gives an Empty Board", () => {
     expect(Game()).toEqual([]);
+  });
+  it("Gives a board with empty values", () => {
+    expect(Game()).toEqual(['','','','','','','','','']);
   });
 });
