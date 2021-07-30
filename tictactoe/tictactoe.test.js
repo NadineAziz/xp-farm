@@ -3,7 +3,8 @@ const { Game,
         switchPlayersTurns,
         switchPlayersCharacters,
         randomPosition,
-        isRowFinished } = require("./tictactoe");
+        isRowFinished,
+        isColumnFinished } = require("./tictactoe");
 
 describe("TicTacToe", () => {
     describe('Board and Draw Board', () => {
@@ -54,9 +55,23 @@ describe("TicTacToe", () => {
     });
 
     describe('Win State', () => {
-        it('Should return true when either players win in by a row', () => {
-            testBoard = ['X','X','X','','','O','O']
+        it('Should return true when won by a row with X', () => {
+            testBoard = ['X','X','X',
+                         '','','O',
+                         'O','','']
             expect(isRowFinished(testBoard)).toEqual(true);
+        });
+        it('Should return true when won by a row with O', () => {
+            testBoard = ['X','X','',
+                        'O','O','O'
+                        ,'','','']
+            expect(isRowFinished(testBoard)).toEqual(true);
+        });
+        it('Should return true when won by a column with X', () => {
+            testBoard = ['X','','',
+                         'X','O','O',
+                         'X','','']
+            expect(isColumnFinished(testBoard)).toEqual(true);
         })
     })
 

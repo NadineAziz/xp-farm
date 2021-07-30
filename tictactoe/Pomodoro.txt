@@ -15,10 +15,18 @@ If there is time:
 - Random placement function (followed up to the next Pomodoro)
 
 Pomodoro - 3:
-- Random placement function
-- Check if the game is still going on
+- Random placement function(Done)
+- Check if the game is still going on(Done)
 - Check for win cases:
-    Row
+    Row(Done)
+    Column (followed up to the next Pomodoro)
+    Diagonal(followed up to the next Pomodoro)
+Refactor if needed
+
+Pomodoro - 4:
+- Check for win Cases:
     Column
     Diagonal
-Refactor if needed
+- Check if game is draw state
+- Refactor
+
