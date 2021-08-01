@@ -37,13 +37,13 @@ function playerWonOrDraw(state, player) {
 }
 
 function randomPosition(board) {
-  let x = Math.round(Math.random() * board.length);
+  let x = Math.floor(Math.random() * board.length);
 
-  while (typeof board[x - 1] === "string") {
-    x = Math.round(Math.random() * board.length);
+  while (typeof board[x] === "string") {
+    x = Math.floor(Math.random() * board.length);
   }
 
-  return x - 1;
+  return x;
 }
 function switchPlayersTurns(player) {
   return player % 2 === 1 ? 1 : 2;
