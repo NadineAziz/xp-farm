@@ -1,48 +1,52 @@
 Tic-tac-toe UAT Scenarios
-- Game Board Creation phase
-- Player X won with a vertical line
-- Player O won with a horizontal line
-- Player X won with a diagonal line
-- Game ends with a draw
+- Game Board Creation phase(Done)
+- Player X won with a vertical line(Done)
+- Player O won with a horizontal line(Done)
+- Player X won with a diagonal line(Done)
+- Game ends with a draw(Done)
 
 Possible Tests:
+
+Done
 Game Board Creation phase:
 Input: Empty Board
 Output: Print Board
+Deleted
+
 
 Player X won with a vertical line:
 Input: [ X,'',''
         ,X,O,'',
          X, '', '']
-Output: Player X won
+Output: Player X won  (Done)
 
 Input: [ O,O,O
         ,'',O,'',
          X, '', X]
-Output: Player O won
+Output: Player O won  (Done)
 
 
 - Player O won with a horizontal line
 Input: [ '','',''
         ,O,O,'',
          X, X, X]
-Output: Player X won
+Output: Player X won  (Done)
 
 Input: [ X,'',''
         ,O,O,O,
          X, '', X]
-Output: Player O won
+Output: Player O won  (Done)
 
 - Player X won with a diagonal line
 Input: [ X,'',O
         ,O,X,'',
          '', X, X]
-Output: Player X won
+Output: Player X won  (Done)
 
 Input: [ X,'',O
         ,'',O,O,
          O, '', X]
-Output: Player O won
+Output: Player O won  (Done)
 
  Game ends with a draw
 
@@ -50,4 +54,4 @@ Output: Player O won
       O,X,O
      ,X,O,X,
       X,O, X]
-Output: GAME ENDS WITH A DRAW!
+Output: GAME ENDS WITH A DRAW! (Done)
