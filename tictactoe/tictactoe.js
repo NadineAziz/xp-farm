@@ -17,17 +17,17 @@ async function Game(board) {
 
     player += 1;
     state = isStillOnPlay(board);
-    //await wait(2000);
+    await wait(2000);
   }
 
   console.log(playerWonOrDraw(state, player));
   console.log(drawBoard(board));
 }
-// function wait(timeout) {
-//     return new Promise(resolve => {
-//         setTimeout(resolve, timeout);
-//     });
-// }
+function wait(timeout) {
+    return new Promise(resolve => {
+        setTimeout(resolve, timeout);
+    });
+}
 
 function playerWonOrDraw(state, player) {
   return state === 1
@@ -39,7 +39,7 @@ function playerWonOrDraw(state, player) {
 function randomPosition(board) {
   let x = Math.round(Math.random() * board.length);
 
-  while (typeof board[x - 1] === "string") {
+  while (typeof board[x-1] === "string") {
     x = Math.round(Math.random() * board.length);
   }
 
