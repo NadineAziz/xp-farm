@@ -92,16 +92,15 @@ describe("TicTacToe", () => {
         
         it("Should return true if the game has ended with a win", () => {
                 testBoard = ['X','X','X','','','','','',''];
-                expect(isStillOnPlay(testBoard)).toEqual(true);
+                expect(isStillOnPlay(testBoard)).toEqual(1);
         });
 
         it("Should return false if the game has ended with a draw", () => {
             testBoard = ['X','X','O',
                         'O','O','X',
                         'X','O','X'];
-            expect(isStillOnPlay(testBoard)).toEqual(false);
+            expect(isStillOnPlay(testBoard)).toEqual(0);
         });
-    
     })
 
 });

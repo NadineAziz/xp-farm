@@ -4,13 +4,15 @@ let movePosition;
 let state = -1;
 
 async function Game(board) {
-  console.log(`Game Board Creation: \n The game will start with player X`);
+  console.log(`Game Board Creation:`);
 
   while (state === -1) {
     console.log(drawBoard(board));
 
     player = switchPlayersTurns(player);
+
     console.log(`${switchPlayersCharacters(player)}'s Turn`);
+
     movePosition = randomPosition(board);
 
     board[movePosition] = switchPlayersCharacters(player);
@@ -19,14 +21,13 @@ async function Game(board) {
     state = isStillOnPlay(board);
     await wait(2000);
   }
-
-  console.log(playerWonOrDraw(state, player));
   console.log(drawBoard(board));
+  console.log(playerWonOrDraw(state, player));
 }
 function wait(timeout) {
-    return new Promise(resolve => {
-        setTimeout(resolve, timeout);
-    });
+  return new Promise((resolve) => {
+    setTimeout(resolve, timeout);
+  });
 }
 
 function playerWonOrDraw(state, player) {
@@ -35,21 +36,17 @@ function playerWonOrDraw(state, player) {
     : "Game draw";
 }
 
-// Added x-1 because it should not exceed out of the 9th position
 function randomPosition(board) {
   let x = Math.round(Math.random() * board.length);
 
-  while (typeof board[x-1] === "string") {
+  while (typeof board[x - 1] === "string") {
     x = Math.round(Math.random() * board.length);
   }
 
   return x - 1;
 }
 function switchPlayersTurns(player) {
-  if (player % 2 == 1) player = 1;
-  else player = 2;
-
-  return player;
+  return player % 2 === 1 ? 1 : 2;
 }
 
 function switchPlayersCharacters(player) {
@@ -65,23 +62,17 @@ function drawBoard(board) {
     `;
 }
 function prettyPrint(cell) {
-  if (typeof cell === "number") {
-    return "";
-  } else {
-    return cell;
-  }
+  return typeof cell === "number" ? "" : cell;
 }
 
 function isStillOnPlay(board) {
-  if (
-    isColumnFinished(board) ||
+  return isColumnFinished(board) ||
     isRowFinished(board) ||
     isDiagonalFinished(board)
-  )
-    return 1;
-  if (isComplete(board)) return 0;
-
-  return -1;
+    ? 1
+    : isComplete(board)
+    ? 0
+    : -1;
 }
 
 function isComplete(board) {
