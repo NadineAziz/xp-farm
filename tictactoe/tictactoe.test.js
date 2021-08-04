@@ -23,15 +23,15 @@ describe("TicTacToe", () => {
         });
     });
 
-    describe('Game players', () => {
+    describe('Random Positioning', () => {
         it("Should return a random position on the board", () => {
-            testBoard = ['','','','','','','','',''];
+            testBoard = ['X',2,'O',4,5,6,'X',8,'X'];
             var reg = new RegExp('[0-8]');
-            reg.test(randomPosition(testBoard));
+            reg.test(randomPosition(testBoard));    
           });
 
         it("Should return a random position on the board only if the position is empty", () => {
-            testBoard = ['','X','','O','','X','','',''];
+            testBoard = ['X',2,'O',4,5,6,'X',8,'X'];
             var reg = new RegExp('[0-8]');
             reg.test(randomPosition(testBoard));
           });

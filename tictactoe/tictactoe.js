@@ -43,7 +43,7 @@ function randomPosition(board) {
     x = Math.floor(Math.random() * board.length);
   }
 
-  return x;
+  return board.every(i => (typeof i === "string")) ? false : x;
 }
 function switchPlayersTurns(player) {
   return player % 2 === 1 ? 1 : 2;
