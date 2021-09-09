@@ -7,4 +7,7 @@ describe('What is between',() => {
 	it('Should return from 0 to 5', () => {
 		expect(whatIsBetween(0,5)).toStrictEqual([0,1,2,3,4,5]);
 	});
+	it('Should return negative to negative numbers', () => {
+		expect(whatIsBetween(-5,0)).toStrictEqual([-5,-4,-3,-2,-1,0]);
+	});
 })
