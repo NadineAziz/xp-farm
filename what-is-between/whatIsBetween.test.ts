@@ -3,5 +3,8 @@ const {whatIsBetween} = require('./whatIsBetween');
 describe('What is between',() => {
 	it('Should return the same numbers', () => {
 		expect(whatIsBetween(1,2)).toStrictEqual([1,2]);
-	})
+	});
+	it('Should return from 0 to 5', () => {
+		expect(whatIsBetween(0,5)).toStrictEqual([0,1,2,3,4,5]);
+	});
 })
