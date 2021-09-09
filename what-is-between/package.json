@@ -1,5 +1,5 @@
 {
-    "name": "What is Between?",
+    "name": "Who-Likes-It",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -11,6 +11,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@types/jest": "^27.0.1",
         "complexity-report": "^2.0.0-alpha",
         "eslint": "^7.29.0",
         "eslint-config-node": "^4.1.0",
