@@ -1,0 +1,10 @@
+List the sum of all numbers that are less than a specific number. 
+Note: Should be multiple of 3 or 5
+
+Pomodoro:
+- Project setup and base cases
+
+test ideas
+1 -> 0
+10 -> 23
+20 -> 78
