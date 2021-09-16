@@ -1,16 +1,18 @@
-function duplicateCount(text){
-	text = text.toLowerCase();
-	let count = 0;
+function duplicateCount(text) {
+  text = text.toLowerCase();
+  const distinct = new Set();
+  const duplicates = new Set();
 
-	for(let i=0;i<text.length;i++){
-		if(text[i] === text[i+1]){
-			count++;
-		}
-	}
-
-	return count;
-}
+  for (const i of text) {
+    if (distinct.has(i)) {
+      duplicates.add(i);
+    } else {
+      distinct.add(i);
+    }
+  }  
+  return duplicates.size;
+} 
 
 module.exports = {
-	duplicateCount,
-  };
+  duplicateCount,
+};
