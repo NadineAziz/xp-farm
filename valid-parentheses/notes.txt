@@ -57,5 +57,5 @@ When it contains a '(something)'
 Then it passes
 
 Given a sentence 
-When it contains a '()'
+When it contains a '(something (is here)(not there))'
 Then it passes
