@@ -28,4 +28,12 @@ describe("Valid Parentheses", () => {
   it("Should return true when several pairs are given correctly", () => {
     expect(validParentheses("()()()")).toBe(true);
   });
+
+  it("Should return true when pair is given with word correctly", () => {
+    expect(validParentheses("(something)")).toBe(true);
+  });
+
+  it("Should return true when pair is given correctly", () => {
+    expect(validParentheses("(something (is here)(not there))")).toBe(true);
+  });
 });
