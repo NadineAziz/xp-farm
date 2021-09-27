@@ -1,5 +1,5 @@
 function validParentheses(parens){
-	if( parens.includes('(') ){
+	if( parens.includes('(') && parens.includes(')') ){
 		return true;
 	}
 	return false;
