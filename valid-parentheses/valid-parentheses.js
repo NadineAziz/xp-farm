@@ -1,5 +1,9 @@
 function validParentheses(parens){
-	if(parens.includes('(')) return false;
+	if( parens.includes('(')){
+		return true;
+	}
+
+	return false;
 }
 
 module.exports = {

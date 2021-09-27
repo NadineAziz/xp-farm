@@ -9,4 +9,8 @@ describe("Valid Parentheses", () => {
     expect(validParentheses("(something")).toBe(false);
   });
 
+  it("Should return false when one of the pair of parenthesis is given twice", () => {
+    expect(validParentheses("((")).toBe(false);
+  });
+
 });
