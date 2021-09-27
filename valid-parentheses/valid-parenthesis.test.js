@@ -13,4 +13,12 @@ describe("Valid Parentheses", () => {
     expect(validParentheses("((")).toBe(false);
   });
 
+  it("Should return false when one of the pair of parenthesis is given twice", () => {
+    expect(validParentheses("(()")).toBe(false);
+  });
+
+  it("Should return true when pair is given correctly", () => {
+    expect(validParentheses("()")).toBe(true);
+  });
+
 });
