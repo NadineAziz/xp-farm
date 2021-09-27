@@ -1,0 +1,54 @@
+Valid Parentheses
+
+
+Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return 
+true if the string is valid, and false if it's invalid.
+
+Pomodoro 1:
+- Identify several tests in the notes
+- Write User stories and scenarios
+- Write 2 failed tests
+- Solve problem with a TDD program
+
+#1 User Story
+As a writer
+I want to check the invalid parenthesis in my sentence
+So it fails
+
+#Scenario
+
+Given a sentence 
+When it contains a '('
+Then it fails
+
+Given a sentence 
+When it contains a '(wrong'
+Then it fails
+
+Given a sentence 
+When it contains a '(('
+Then it fails
+
+
+#2 User Story
+As a writer
+I want to check the valid parenthesis in my sentence
+So it passes
+
+#Scenario
+
+Given a sentence 
+When it contains a '()'
+Then it passes
+
+Given a sentence 
+When it contains a '()()()'
+Then it passes
+
+Given a sentence 
+When it contains a '(something)'
+Then it passes
+
+Given a sentence 
+When it contains a '()'
+Then it passes
