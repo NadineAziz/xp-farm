@@ -21,4 +21,8 @@ describe("Valid Parentheses", () => {
     expect(validParentheses("()")).toBe(true);
   });
 
+  it("Should return true when pair is given correctly", () => {
+    expect(validParentheses("()")).toBe(true);
+  });
+
 });
