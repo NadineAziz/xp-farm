@@ -16,8 +16,11 @@ Scenario 2 :
 Given 2 arrays a=[1] b=[1] when I try to compare them then gives true
 
 Scenario 3 :
-Given 2 arrays a=[2] b=[4] when I try to compare them then gives true
+Given 2 arrays a=[2] b=[2] when I try to compare them then gives true
 
 Scenario 4 :
+Given 2 arrays a=[2] b=[4] when I try to compare them then gives true
+
+Scenario 5 :
 Given 2 arrays a=[3] b=[1] when I try to compare them then gives false
 

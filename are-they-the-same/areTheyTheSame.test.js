@@ -7,7 +7,9 @@ describe("Are they the same?", () => {
     });
 
     it("Scenario 2 : should return true when both numbers are equal", () => {
-      expect(areTheyTheSame([1], [1])).toBe(true);
+      expect(areTheyTheSame([1],[1])).toBe(true);
+      expect(areTheyTheSame([2],[2])).toBe(true);
     });
+    
   });
 });
