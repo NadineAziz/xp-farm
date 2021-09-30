@@ -23,4 +23,10 @@ describe("Are they the same?", () => {
       expect(areTheyTheSame([3],[1])).toBe(false);
     });
   });
+
+  describe("User Story 2: Array with big elements", () => {
+    it("Scenario 1 : Given 2 arrays with correct squares when I try to compare them then gives true", () => {
+      expect(areTheyTheSame([121, 144, 19, 161, 19, 144, 19, 11], [121, 14641, 20736, 361, 25921, 361, 20736, 361])).toBe(true);
+    });
+  })
 });
