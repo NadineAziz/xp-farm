@@ -1,0 +1,23 @@
+Given two arrays a and b write a function comp(a, b) (or compSame(a, b)) that checks whether the two arrays have the "same" 
+elements, with the same multiplicities. "Same" means, here, that the elements in b are the elements in a squared, regardless of the order.
+
+Pomodoro1:
+- Set up project
+- Write possible Tests
+- Write User Stories and Scenario
+
+User Story 1 :
+As 2 arrays with at most single elements, I want to compare myself to another array, so that I find my squares
+
+Scenario 1 :
+Given 2 empty arrays when I try to compare them then gives false
+
+Scenario 2 :
+Given 2 arrays a=[1] b=[1] when I try to compare them then gives true
+
+Scenario 3 :
+Given 2 arrays a=[2] b=[4] when I try to compare them then gives true
+
+Scenario 4 :
+Given 2 arrays a=[3] b=[1] when I try to compare them then gives false
+
