@@ -1,6 +1,10 @@
 function areTheyTheSame(array1, array2) {
-	if(array1.includes(1) && array2.includes(1)) {
-		return true;
+	for(let i in array1) {
+		for(let j in array2) {
+			if(array1[i] === array2[j]){
+				return true;
+			}
+		}
 	}
 	return false;
 }
