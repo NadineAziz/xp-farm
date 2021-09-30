@@ -2,10 +2,6 @@ const { areTheyTheSame } = require("./areTheyTheSame");
 
 describe("Are they the same?", () => {
   describe("User Story 1: Arrays with Initial elements", () => {
-    it("Scenario 1 : should return false when both arrays are empty", () => {
-      expect(areTheyTheSame([], [])).toBe(false);
-    });
-
     it("Scenario 2 & 3 : should return true when both numbers are equal", () => {
       expect(areTheyTheSame([1],[1])).toBe(true);
       expect(areTheyTheSame([2],[2])).toBe(false);
@@ -28,5 +24,12 @@ describe("Are they the same?", () => {
     it("Scenario 1 : Given 2 arrays with correct squares when I try to compare them then gives true", () => {
       expect(areTheyTheSame([121, 144, 19, 161, 19, 144, 19, 11], [121, 14641, 20736, 361, 25921, 361, 20736, 361])).toBe(true);
     });
-  })
+
+    it("Scenario 2 : Given 2 arrays when I try to compare them as I change the first number to not be found in array then gives false", () => {
+      expect(areTheyTheSame([121, 144, 19, 161, 19, 144, 19, 11] ,[132, 14641, 20736, 361, 25921, 361, 20736, 361])).toBe(false);
+    });
+    it("Scenario 3 : Given 2 arrays when I try to compare them as I change the first number to not be found in array then gives false", () => {
+      expect(areTheyTheSame([121, 144, 19, 161, 19, 144, 19, 11] ,[121, 14641, 20736, 36100, 25921, 361, 20736, 361])).toBe(false);
+    });
+  });
 });
