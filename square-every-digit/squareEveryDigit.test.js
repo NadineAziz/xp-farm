@@ -29,4 +29,8 @@ describe("Square Every Number", () => {
     expect(squareEveryDigit(3254)).toEqual('942516');
   });
 
+  it("Given a four digit number 9119 when I want to concatenate the number then it will be squared", () => {
+    expect(squareEveryDigit(9119)).toEqual('811181');
+  });
+
 });
