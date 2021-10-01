@@ -20,4 +20,9 @@ describe("Square Every Number", () => {
   it("Given a three digit number 231 when I want to concatenate the number then it will be squared", () => {
     expect(squareEveryDigit(231)).toEqual('491');
   });
+
+  it("Given a three digit number 428 when I want to concatenate the number then it will be squared", () => {
+    expect(squareEveryDigit(428)).toEqual('16464');
+  });
+
 });
