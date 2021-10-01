@@ -18,19 +18,19 @@ Scenario 4:
 - Given a double digit number 30 when I want to concatenate the number then it will be squared
 
 Scenario 5:
-- Given a double digit number 231 when I want to concatenate the number then it will be squared
+- Given a three digit number 231 when I want to concatenate the number then it will be squared
 
 Scenario 6:
-- Given a double digit number 428 when I want to concatenate the number then it will be squared
+- Given a three digit number 428 when I want to concatenate the number then it will be squared
 
 Scenario 7:
-- Given a double digit number 3254 when I want to concatenate the number then it will be squared
+- Given a four digit number 3254 when I want to concatenate the number then it will be squared
 
 Scenario 8:
-- Given a double digit number 9119 when I want to concatenate the number then it will be squared
+- Given a four digit number 9119 when I want to concatenate the number then it will be squared
 
 Scenario 9:
-- Given a double digit number 91193 when I want to concatenate the number then it will be squared
+- Given a five digit number 91193 when I want to concatenate the number then it will be squared
 
 Scenario 10:
-- Given a double digit number 911932 when I want to concatenate the number then it will be squared
+- Given a six digit number 911932 when I want to concatenate the number then it will be squared
