@@ -13,4 +13,8 @@ describe("Square Every Number", () => {
     expect(squareEveryDigit(10)).toEqual('10');
   });
 
+  it("Given a double digit number 30 when I want to concatenate the number then it will be squared", () => {
+    expect(squareEveryDigit(30)).toEqual('90');
+  });
+
 });
