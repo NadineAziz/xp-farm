@@ -1,4 +1,6 @@
 function squareEveryDigit(num){
-	return 1;
+	num = Math.pow(num,2);
+	return num;
 }
+
 module.exports = {squareEveryDigit};
