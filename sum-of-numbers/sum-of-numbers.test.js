@@ -16,4 +16,11 @@ describe("Sum of Numbers", () => {
   it("Given a=-1 and b=2 when I sum them up then should give me 2", () => {
     expect(sumOfNumbers(-1, 2)).toEqual(2);
   });
+
+  it("Given a=-1 and b=0 when I sum them up then should give me -1", () => {
+    expect(sumOfNumbers(-1, 0)).toEqual(-1);
+  });
+  it("Given a=1 and b=1 when I sum them up then should give me 1", () => {
+    expect(sumOfNumbers(1, 1)).toEqual(1);
+  });
 });
