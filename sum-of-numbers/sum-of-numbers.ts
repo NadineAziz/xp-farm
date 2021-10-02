@@ -1,5 +1,3 @@
-function sumOfNumbers(a, b) {
-	return 0;
-}
+function sumOfNumbers(a, b) {}
 
 module.exports = { sumOfNumbers };
