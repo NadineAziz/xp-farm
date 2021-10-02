@@ -1,15 +1,15 @@
 function sumOfNumbers(a, b) {
-  let sum = 0;
+  return a === b ? a : notEqual(a, b);
+}
 
-  if (a === b) {
-    return a;
-  }
+function notEqual(a, b) {
+  let sum = 0;
 
   if (a < b) {
     for (; a <= b; a++) {
       sum += a;
     }
-  }else if (a > b) {
+  } else if (a > b) {
     for (; b <= a; b++) {
       sum += b;
     }
