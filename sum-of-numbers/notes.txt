@@ -27,6 +27,8 @@ Given a=0 and b=0 when I sum them up then should give me 0
 Scenario 2:
 Given a=1 and b=0 when I sum them up then should give me 1
 
-
-Scenario 2:
+Scenario 3:
 Given a=1 and b=2 when I sum them up then should give me 3
+
+Scenario 4:
+Given a=-1 and b=2 when I sum them up then should give me 2
