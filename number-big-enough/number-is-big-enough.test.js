@@ -13,4 +13,8 @@ describe('Number is big enough', () => {
 	it('Given that I have "13" as an input when I square it\'s\ digits then it fails',()=>{
 		expect(narcissistic(13)).toBe(false);
 	});
+
+	it('Given that I have "24" as an input when I square it\'s\ digits then it fails',()=>{
+		expect(narcissistic(24)).toBe(false);
+	});
 })
