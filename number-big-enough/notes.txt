@@ -1,0 +1,50 @@
+A Narcissistic Number is a positive number which is the sum of its own digits, each raised to the power
+of the number of digits in a given base. In this Kata, we will restrict ourselves to decimal (base 10).
+
+Pomodoro 1:
+- Code setup
+- Possible User Stories and Scenarios
+
+User Story 1:
+As a number picker 
+I want to square the number of digits
+So that I check if the number is narcissistic
+
+Scenario 1:
+Given that I have "1" as an input when I square it's digits then it passes
+
+Scenario 2:
+Given that I have "2" as an input when I square it's digits then it passes
+
+Scenario 3:
+Given that I have "13" as an input when I square it's digits then it fails
+
+Scenario 4:
+Given that I have "24" as an input when I square it's digits then it fails
+
+Scenario 5:
+Given that I have "153" as an input when I square it's digits then it passes
+
+Scenario 6:
+Given that I have "370" as an input when I square it's digits then it passes
+
+Scenario 7:
+Given that I have "322" as an input when I square it's digits then it fails
+
+Scenario 8:
+Given that I have "1634" as an input when I square it's digits then it passes
+
+Scenario 9:
+Given that I have "8208" as an input when I square it's digits then it passes
+
+Scenario 10:
+Given that I have "8218" as an input when I square it's digits then it fails
+
+Scenario 11:
+Given that I have "92727" as an input when I square it's digits then it passes
+
+Scenario 12:
+Given that I have "1741725" as an input when I square it's digits then it passes
+
+Scenario 13:
+Given that I have "1742725" as an input when I square it's digits then it fails
