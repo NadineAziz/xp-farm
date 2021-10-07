@@ -1,0 +1,6 @@
+⚠️ The world is in quarantine! There is a new pandemia that struggles mankind. Each continent is isolated from each other but infected people have spread before the warning. ⚠️
+
+Pomodoro 1:
+- Init files
+- Possible user stories
+
