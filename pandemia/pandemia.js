@@ -1,4 +1,4 @@
-function pandemia() {
+function pandemia(s) {
 
 }
 
