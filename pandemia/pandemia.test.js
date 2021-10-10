@@ -7,5 +7,9 @@ describe('Pandemia',()=>{
 
 	it('Given a map with X when I want to find the percentage then I give 0%',() => {
 		expect(pandemia('X')).toBe(0);
+	});
+
+	it('Given a map with X when I want to find the percentage then I give 0%',() => {
+		expect(pandemia('1')).toBe(100);
 	})
 })
