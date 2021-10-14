@@ -35,5 +35,11 @@ describe('Authur Party' , () => {
 			expect(inviteMoreWoman([1,1,1,1,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1])).toBe(true);
 		});
 	});
+
+	describe('Senario 5: As King Arthur has a party He wants to invite more women than men So that so he could have the chance for a date', () => {
+		it('User Story 1:Given that there is a party When king author invites 2 men and 5 women Then it should pass because one (or more) might like him (maybe when he shares his sushi) ',() => {
+			expect(inviteMoreWoman([1,1,-1,-1,-1,-1,-1])).toBe(true);
+		});
+	});
 	
 });
