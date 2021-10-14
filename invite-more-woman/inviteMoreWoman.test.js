@@ -28,7 +28,7 @@ describe('Authur Party' , () => {
 	});
 
 	describe('Senario 4:As King Arthur has a party He wants to invite equal amount of men and women So that so he could have the chance for a date', () => {
-		it('User Story 1: Given that there is a party When king author invites 2 men and 1 woman Then it should fail because she might not like him (he doesn\'t share sushi)',() => {
+		it('User Story 1: Given that there is a party When king author invites 2 men and 2 women Then it should pass because one might like him (maybe when he shares his sushi)',() => {
 			expect(inviteMoreWoman([1,1,-1,-1])).toBe(true);
 		});
 	});
