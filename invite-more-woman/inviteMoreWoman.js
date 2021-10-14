@@ -1,15 +1,18 @@
 function inviteMoreWoman(L){
-	arrWoman = [];
-	arrMen = [];
+	countWoman = 0;
+	countMen = 0;
 	for (const i in L) {
 		if (L[i] === 1) {
-			arrMen.push(i);
-		}else if (L[i] === -1) {
-			arrWoman.push(i);
+			countMen++;
+		}else{
+			countWoman++;
 		}
 	}
-	if((arrMen.length > arrWoman.length) || L.length === 0) return false;
-	return true;
+	return checkGreater(countMen, countWoman,L);
+}
+
+function checkGreater(first,second,L){
+	return first > second || L.length === 0 ? false : true;
 }
 
 module.exports = {
