@@ -31,6 +31,9 @@ describe('Authur Party' , () => {
 		it('User Story 1: Given that there is a party When king author invites 2 men and 2 women Then it should pass because one might like him (maybe when he shares his sushi)',() => {
 			expect(inviteMoreWoman([1,1,-1,-1])).toBe(true);
 		});
+		it('User Story 2:Given that there is a party When king author invites 10 men and 10 women Then it should pass because one might like him (maybe when he shares his sushi)',() => {
+			expect(inviteMoreWoman([1,1,1,1,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1])).toBe(true);
+		});
 	});
 	
 });
