@@ -1,0 +1,91 @@
+Task
+King Arthur and his knights are having a New Years party. Last year Lancelot was jealous of Arthur, because Arthur had a date and Lancelot did not, and they started a duel.
+
+To prevent this from happening again, Arthur wants to make sure that there are at least as many women as men at this year's party. He gave you a list of integers of all the party goers.
+
+Arthur needs you to return true if he needs to invite more women or false if he is all set.
+
+Notes:
+1  : represents men
+-1 : represents women
+
+🍅 Pomodoro 1: 
+- Init program
+- Write possible scenarios and use cases associated
+- Write initial tests
+
+
+🗒️ Senario 1:
+As King Arthur has a party
+He wants to invite no one
+So that so he could eat all the sushi
+
+User Story 1:
+Given that there is a party
+When king author invites no one
+Then it should fail because he will have no date
+
+
+🗒️ Senario 2:
+As King Arthur has a party
+He wants to invite only men
+So that so he could eat all the sushi and they don't dare
+
+User Story 1:
+Given that there is a party
+When king author invites one man
+Then it should fail because he will have no date
+
+User Story 2:
+Given that there is a party
+When king author invites 3 men
+Then it should fail because he will have no date
+
+
+🗒️ Senario 3:
+As King Arthur has a party
+He wants to invite more men than women
+So that so he could have the chance for a date
+
+User Story 1:
+Given that there is a party
+When king author invites 2 men and 1 woman
+Then it should fail because she might not like him (he doesn't share sushi)
+
+User Story 2:
+Given that there is a party
+When king author invites 5 men and 3 woman
+Then it should fail because Authur is eating sushi and getting all the women
+
+
+🗒️ Senario 4:
+As King Arthur has a party
+He wants to invite equal amount of men and women
+So that so he could have the chance for a date
+
+User Story 1:
+Given that there is a party
+When king author invites 2 men and 2 women
+Then it should pass because one might like him (maybe when he shares his sushi)
+
+User Story 2:
+Given that there is a party
+When king author invites 10 men and 10 women
+Then it should pass because one might like him (maybe when he shares his sushi)
+
+
+
+🗒️ Senario 5:
+As King Arthur has a party
+He wants to invite more women than men
+So that so he could have the chance for a date
+
+User Story 1:
+Given that there is a party
+When king author invites 2 men and 5 women
+Then it should pass because one (or more) might like him (maybe when he shares his sushi)
+
+User Story 2:
+Given that there is a party
+When king author invites 5 men and 24 women
+Then it should pass because one (defiantly more) might like him (maybe when he shares his sushi)
