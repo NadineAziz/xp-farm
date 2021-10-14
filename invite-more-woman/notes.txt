@@ -92,4 +92,9 @@ Then it should pass because one (defiantly more) might like him (maybe when he s
 
 🍅 Pomodoro 2: 
 - Write initial tests
-- Write 1 failing test and 1 successful test 
+- Write 1 failing test and 1 successful test
+
+🍅 Pomodoro 3: 
+- Write initial tests
+- Write last user stories and refactor
+
