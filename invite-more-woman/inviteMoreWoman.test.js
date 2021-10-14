@@ -11,6 +11,10 @@ describe('Authur Party' , () => {
 		it('User Story 1: Given that there is a party When king author invites one man Then it should fail because he will have no date',() => {
 			expect(inviteMoreWoman([1])).toBe(false);
 		});
+
+		it('User Story 2: Given that there is a party When king author invites 3 men Then it should fail because he will have no date',() => {
+			expect(inviteMoreWoman([1,1,1])).toBe(false);
+		});
 	});
 	
 });
