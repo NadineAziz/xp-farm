@@ -89,3 +89,7 @@ User Story 2:
 Given that there is a party
 When king author invites 5 men and 24 women
 Then it should pass because one (defiantly more) might like him (maybe when he shares his sushi)
+
+🍅 Pomodoro 2: 
+- Write initial tests
+- Write 1 failing test and 1 successful test 
