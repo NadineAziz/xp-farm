@@ -15,37 +15,37 @@ I want to compare the digits of a number
 to see if it's a jumping number
 
 Scenario 1:
-Given a single digit number 8 when I check its digits then the result should be 'Jumping!!"
+Given a single digit number 8 when I check its digits then the result should be Jumping!!"
 
 Scenario 2:
-Given a number 0 when I check its digits then the result should be 'Jumping!!"
+Given a number 0 when I check its digits then the result should be Jumping!!"
 
 Scenario 3:
-Given a number 11 when I check its digits then the result should be 'Not!!"
+Given a number 11 when I check its digits then the result should be Not!!"
 
 Scenario 4:
-Given a number 12 when I check its digits then the result should be 'Jumping!!'
+Given a number 12 when I check its digits then the result should be Jumping!!
 
 Scenario 5:
-Given a number 21 when I check its digits then the result should be 'Jumping!!'
+Given a number 21 when I check its digits then the result should be Jumping!!
 
 Scenario 6:
-Given a number 22 when I check its digits then the result should be 'Not!!'
+Given a number 22 when I check its digits then the result should be Not!!
 
 Scenario 7:
-Given a number 79 when I check its digits then the result should be 'Not!!'
+Given a number 79 when I check its digits then the result should be Not!!
 
 Scenario 8:
-Given a number 23 when I check its digits then the result should be 'Jumping!!'
+Given a number 23 when I check its digits then the result should be Jumping!!
 
 Scenario 9:
-Given a number 556847 when I check its digits then the result should be 'Not!!'
+Given a number 556847 when I check its digits then the result should be Not!!
 
 Scenario 10:
-Given a number 4343456 when I check its digits then the result should be 'Jumping!!'
+Given a number 4343456 when I check its digits then the result should be Jumping!!
 
 Scenario 11:
-Given a number 89098 when I check its digits then the result should be 'Not!!'
+Given a number 89098 when I check its digits then the result should be Not!!
 
 Scenario 12:
-Given a number 32 when I check its digits then the result should be 'Jumping!!'
+Given a number 32 when I check its digits then the result should be Jumping!!
