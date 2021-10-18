@@ -15,13 +15,13 @@ I want to compare the digits of a number
 to see if it's a jumping number
 
 Scenario 1:
-Given a single digit number 8 when I check its digits then the result should be Jumping!!"
+Given a single digit number 8 when I check its digits then the result should be Jumping!!
 
 Scenario 2:
-Given a number 0 when I check its digits then the result should be Jumping!!"
+Given a number 0 when I check its digits then the result should be Jumping!!
 
 Scenario 3:
-Given a number 11 when I check its digits then the result should be Not!!"
+Given a number 11 when I check its digits then the result should be Not!!
 
 Scenario 4:
 Given a number 12 when I check its digits then the result should be Jumping!!
