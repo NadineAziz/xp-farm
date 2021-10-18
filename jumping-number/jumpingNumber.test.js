@@ -7,5 +7,9 @@ describe('Jumping Number',() => {
 
   it('Scenario 2:Given a number 0 when I check its digits then the result should be Jumping!!',() => {
     expect(jumpingNumber(0)).toEqual('Jumping!!');
-  })
+  });
+
+  it('Scenario 3:Given a number 11 when I check its digits then the result should be Not!!',() => {
+    expect(jumpingNumber(11)).toEqual('Not!!');
+  });
 })
