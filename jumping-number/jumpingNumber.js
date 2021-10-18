@@ -10,8 +10,6 @@ function jumpingNumber(number){
   }
   return 'Not!!';
 }
-console.log(jumpingNumber(12));
-
 
 module.exports = {
   jumpingNumber

@@ -24,4 +24,8 @@ describe('Jumping Number',() => {
   it('Scenario 6:Given a number 22 when I check its digits then the result should be Not!!',() => {
     expect(jumpingNumber(22)).toEqual('Not!!');
   });
+
+  it('Scenario 7:Given a number 79 when I check its digits then the result should be Not!!',() => {
+    expect(jumpingNumber(79)).toEqual('Not!!');
+  });
 })
