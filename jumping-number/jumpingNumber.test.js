@@ -16,4 +16,8 @@ describe('Jumping Number',() => {
   it('Scenario 4:Given a number 12 when I check its digits then the result should be Jumping!!',() => {
     expect(jumpingNumber(12)).toEqual('Jumping!!');
   });
+
+  it('Scenario 5:Given a number 21 when I check its digits then the result should be Jumping!!',() => {
+    expect(jumpingNumber(21)).toEqual('Jumping!!');
+  });
 })
