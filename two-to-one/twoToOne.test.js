@@ -7,6 +7,13 @@ describe('Two to One', () => {
 		});
 		it(`Scenario 2:Given strings c and d when I sort/unique them then it should return 'cd'`,() => {
 			expect(twoToOne('c','d')).toBe('cd');
-		})
+		});
+	});
+
+	describe('User Story 2:As I have 2 strings with double letters I want to apply a function on them so that I get a sorted unique list.',() => {
+		it(`Scenario 1:Given strings ab and cd when I sort/unique them then it should return 'abcd'
+		`,() => {
+			expect(twoToOne('ab','cd')).toBe('abcd');
+		});
 	})
 })
