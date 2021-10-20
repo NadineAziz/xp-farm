@@ -3,14 +3,14 @@ function jumpingNumber(number){
   if(number.toString().length < 2){
     return 'Jumping!!';
   }
-  for(let i = 0; i < numArray.length; i++){
-    if((numArray[i] - numArray[i+1]) === 1 || (numArray[i] - numArray[i+1]) === -1){
-      return 'Jumping!!';
+  for(let i = 1; i < numArray.length; i++){
+    if(Math.abs((numArray[i] - numArray[i-1])) !== 1){
+      return 'Not!!';
     }
   }
-  return 'Not!!';
+  return 'Jumping!!';
 }
-
+console.log(jumpingNumber(21))
 module.exports = {
   jumpingNumber
 };

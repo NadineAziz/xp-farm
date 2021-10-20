@@ -35,9 +35,6 @@ Given a number 22 when I check its digits then the result should be Not!!
 Scenario 7:
 Given a number 79 when I check its digits then the result should be Not!!
 
-Scenario 8:
-Given a number 23 when I check its digits then the result should be Jumping!!
-
 Scenario 9:
 Given a number 556847 when I check its digits then the result should be Not!!
 
