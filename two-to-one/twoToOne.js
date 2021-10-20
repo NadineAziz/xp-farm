@@ -1,5 +1,5 @@
 function twoToOne(a,b){
-	return 'ab';
+	return a+b;
 }
 
 module.exports = {
