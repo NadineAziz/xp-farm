@@ -1,0 +1,56 @@
+Take 2 strings s1 and s2 including only letters from ato z. Return a new sorted string, the longest possible, containing distinct letters, - each taken only once - coming from s1 or s2.
+
+Examples:
+a = "xyaabbbccccdefww"
+b = "xxxxyyyyabklmopq"
+longest(a, b) -> "abcdefklmopqwxy"
+a = "abcdefghijklmnopqrstuvwxyz"
+longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
+
+
+Pomodoro 1:
+- Project Setup
+- Possible Scenarios
+
+User Story 1:
+As I have 2 strings with single letters I want to apply a function on them so that I get a sorted unique list.
+
+Scenario 1:
+Given strings a and b when I sort/unique them then it should return 'ab'
+
+Scenario 2:
+Given strings c and d when I sort/unique them then it should return 'cd'
+
+User Story 2:
+As I have 2 strings with double letters I want to apply a function on them so that I get a sorted unique list.
+
+Scenario 1:
+Given strings ab and cd when I sort/unique them then it should return 'abcd'
+
+Scenario 2:
+Given strings ab and bd when I sort/unique them then it should return 'abd'
+
+User Story 3:
+As I have 2 strings with 3 letters I want to apply a function on them so that I get a sorted unique list.
+
+Scenario 1:
+Given strings abc and cde when I sort/unique them then it should return 'abcde'
+
+Scenario 2:
+Given strings lmn and opp when I sort/unique them then it should return 'lmnop'
+
+User Story 4:
+As I have 2 strings with mixed number of letters I want to apply a function on them so that I get a sorted unique list.
+
+Scenario 1:
+Given strings abfg and saasw when I sort/unique them then it should return 'abfgsw'
+
+Scenario 2:
+Given strings aretheyhere and yestheyarehere when I sort/unique them then it should return 'aehrsty'
+
+Scenario 3:
+Given strings xyaabbbccccdefww and xxxxyyyyabklmopq when I sort/unique them then it should return 'abcdefghijklmnopqrstuvwxyz'
+
+Scenario 4:
+Given strings inmanylanguages and theresapairoffunctions when I sort/unique them then it should return 'acefghilmnoprstuy'
+
