@@ -15,5 +15,8 @@ describe('Two to One', () => {
 		`,() => {
 			expect(twoToOne('ab','cd')).toBe('abcd');
 		});
+		it(`Scenario 2:Given strings ab and bd when I sort/unique them then it should return 'abd'`,() => {
+			expect(twoToOne('ab','bd')).toBe('abd');
+		});
 	})
 })
