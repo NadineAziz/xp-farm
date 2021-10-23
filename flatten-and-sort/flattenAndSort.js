@@ -1,5 +1,7 @@
 function flattenAndSort(array) {
-	return array;
+	flattenedArray = [].concat(...array);
+
+	return flattenedArray.length === 0 ? [] : length;
 }
 
 console.log(flattenAndSort([[],[]]));
