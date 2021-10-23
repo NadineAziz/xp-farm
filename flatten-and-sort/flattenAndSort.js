@@ -1,11 +1,12 @@
 function flattenAndSort(array) {
 	flattenedArray = [].concat(...array);
 
-	return flattenedArray.length === 0 ? [] : flattenedArray.sort((a,b) => a-b);
+	return flattenedArray.length === 0 ? [] : sortNumbers(flattenedArray);
 }
 
-//console.log(flattenAndSort([[3],[2]]));
-
+function sortNumbers (array) {
+	return array.sort((a,b) => a-b);
+}
 module.exports = {
 	flattenAndSort
 } 
