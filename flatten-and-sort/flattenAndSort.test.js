@@ -38,4 +38,10 @@ describe("Flatten and Sort Array", () => {
 		expect(flattenAndSort([[4,3],[1,2]])).toStrictEqual([1,2,3,4]);
 	  });
   });
+  
+  describe("User Story 5:As an array with numbers unsorted (different length) I want to flatten and sort it so that it returns a single sorted arrayUser Story 5:As an array with numbers unsorted (same length) I want to flatten and sort it so that it returns a single sorted array", () => {
+    it("Scenario 1: Given an array [[5,2], [1]] I want to flatten it and sort it to return a single array [1,2,5]", () => {
+      expect(flattenAndSort([[5,2], [1]])).toStrictEqual([1, 2, 5]);
+    });
+  });
 });
