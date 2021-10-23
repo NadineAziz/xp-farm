@@ -19,4 +19,11 @@ describe("Flatten and Sort Array", () => {
 		expect(flattenAndSort([[2],[]])).toStrictEqual([2]);
 	  });
   });
+
+  describe("User Story 3:As an array with 2 numbers I want to flatten it so that it returns a single array", () => {
+    it("Scenario 1: Given an array [[1], [2]] I want to flatten it to return a single array [1,2]", () => {
+      expect(flattenAndSort([[1], [2]])).toStrictEqual([1,2]);
+    });
+  });
+
 });
