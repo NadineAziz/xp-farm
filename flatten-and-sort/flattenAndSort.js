@@ -1,7 +1,8 @@
 function flattenAndSort(array) {
-	array = [];
 	return array;
 }
+
+console.log(flattenAndSort([[],[]]));
 
 module.exports = {
 	flattenAndSort

@@ -7,6 +7,10 @@ describe('Flatten and Sort Array', () => {
 		it('Scenario 1:Given an empty array [] when I try to flatten and sort it so that it gives back an empty array []',() => {
 			expect(flattenAndSort([])).toStrictEqual([]);
 		});
+
+		it('Scenario 2:Given an empty array [[],[]] when I try to flatten and sort it then it gives back an empty array []',() => {
+			expect(flattenAndSort([[],[]])).toStrictEqual([]);
+		});
 	})
 	
 })
