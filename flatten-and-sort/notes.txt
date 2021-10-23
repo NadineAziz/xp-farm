@@ -9,6 +9,10 @@ Pomodoro 1:
 - Init program
 - Write possible User Story and Scenarios
 
+Pomodoro 2:
+- Program Creation
+- Refactoring
+
 User Story 1:
 As an array with empty arrays I want to not do anything to return an empty array
 
