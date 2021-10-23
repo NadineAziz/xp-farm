@@ -34,5 +34,8 @@ describe("Flatten and Sort Array", () => {
     it("Scenario 1: Given an array [[2], [1]] I want to flatten it and sort it to return a single array [1,2]", () => {
       expect(flattenAndSort([[2], [1]])).toStrictEqual([1, 2]);
     });
+	it("Scenario 2: Given an array [[4,3],[1,2]] I want to flatten t to return a single array [1,2,3,4]", () => {
+		expect(flattenAndSort([[4,3],[1,2]])).toStrictEqual([1,2,3,4]);
+	  });
   });
 });
