@@ -65,5 +65,10 @@ describe("Flatten and Sort Array", () => {
         ])
       ).toStrictEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
     });
+    it("Scenario 4: Given an array [[1, 3, 5], [100], [2, 4, 6]] I want to flatten t to return a single array  [1, 2, 3, 4, 5, 6, 100]", () => {
+      expect(flattenAndSort([[1, 3, 5], [100], [2, 4, 6]])).toStrictEqual([
+        1, 2, 3, 4, 5, 6, 100,
+      ]);
+    });
   });
 });
