@@ -16,7 +16,7 @@ Scenario 1: Given a double digit 10 when I power it then it is not a Disarium (g
 
 Scenario 2: Given a single digit 34 when I power it then it is not a Disarium (gives "Not !!")
 
-Scenario 3: Given a double digit 89 when I power it then it is not a Disarium (gives "Not !!")
+Scenario 3: Given a double digit 89 when I power it then it is a Disarium (gives "Disarium !!")
 
 
 User Story 3:As a triple digit number When I want to power it and add the digit So that I check if it's a Disarium or not
