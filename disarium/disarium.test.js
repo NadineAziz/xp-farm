@@ -1,7 +1,7 @@
 const { disarium } = require("./disarium");
 
 describe("Disarium", () => {
-  describe("User Story 1:As a single digit number When I want to power it and add the digit So that I check if it's a Disarium or not", () => {
+  describe("User Story 1: As a single digit number When I want to power it and add the digit So that I check if it's a Disarium or not", () => {
     it('Scenario 1: Given a single digit 1 when I power it then it is a Disarium (gives "Disarium !!")', () => {
       expect(disarium(1)).toBe("Disarium !!");
     });
@@ -11,7 +11,7 @@ describe("Disarium", () => {
     });
   });
 
-  describe("User Story 2:As a double digit number When I want to power it and add the digit So that I check if it's a Disarium or not", () => {
+  describe("User Story 2: As a double digit number When I want to power it and add the digit So that I check if it's a Disarium or not", () => {
     it('Scenario 1: Given a double digit 10 when I power it then it is not a Disarium (gives "Not !!")', () => {
       expect(disarium(10)).toBe("Not !!");
     });
@@ -23,7 +23,7 @@ describe("Disarium", () => {
     });
   });
 
-  describe("User Story 3:As a triple digit number When I want to power it and add the digit So that I check if it's a Disarium or not", () => {
+  describe("User Story 3: As a triple digit number When I want to power it and add the digit So that I check if it's a Disarium or not", () => {
     it('Scenario 1: Given a triple digit 200 when I power it then it is not a Disarium (gives "Not !!")', () => {
       expect(disarium(200)).toBe("Not !!");
     });
@@ -35,6 +35,11 @@ describe("Disarium", () => {
     });
     it('Scenario 4: Given a triple digit 175 when I power it then it is a Disarium (gives "Disarium !!")', () => {
       expect(disarium(175)).toBe("Disarium !!");
+    });
+  });
+  describe("User Story 4: As a quadruple digit number When I want to power it and add the digit So that I check if it's a Disarium or not", () => {
+    it('Scenario 1: Given a quadruple digit 2000 when I power it then it is not a Disarium (gives "Not !!")', () => {
+      expect(disarium(2000)).toBe("Not !!");
     });
   });
 });
