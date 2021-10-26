@@ -41,5 +41,8 @@ describe("Disarium", () => {
     it('Scenario 1: Given a quadruple digit 2000 when I power it then it is not a Disarium (gives "Not !!")', () => {
       expect(disarium(2000)).toBe("Not !!");
     });
+    it('Scenario 2: Given a quadruple digit 1306 when I power it then it is a Disarium (gives "Disarium !!")', () => {
+      expect(disarium(1306)).toBe("Disarium !!");
+    });
   });
 });
