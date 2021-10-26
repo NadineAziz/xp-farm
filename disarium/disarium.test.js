@@ -10,4 +10,10 @@ describe("Disarium", () => {
       expect(disarium(7)).toBe("Disarium !!");
     });
   });
+
+  describe("User Story 2:As a double digit number When I want to power it and add the digit So that I check if it's a Disarium or not", () => {
+    it('Scenario 1: Given a double digit 10 when I power it then it is not a Disarium (gives "Not !!")', () => {
+      expect(disarium(10)).toBe("Not !!");
+    });
+  });
 });
