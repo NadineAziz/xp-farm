@@ -1,5 +1,7 @@
 function disarium(number) {
-  return sumOfNumArray(fromNumToArr(number)) === number ? 'Disarium !!' : 'Not !!';
+  return sumOfNumArrayPow(fromNumToArr(number)) === number
+    ? "Disarium !!"
+    : "Not !!";
 }
 
 function fromNumToArr(number) {
@@ -12,8 +14,11 @@ function fromNumToArr(number) {
   return output;
 }
 
-function sumOfNumArray(numArray) {
-  for (var i = 0, sum = 0; i < numArray.length; sum += numArray[i++]);
+function sumOfNumArrayPow(numArray) {
+  let sum = 0;
+  for (var i = 0; i < numArray.length; i++) {
+    sum += Math.pow(numArray[i], i + 1);
+  }
   return sum;
 }
 
