@@ -18,5 +18,8 @@ describe("Disarium", () => {
 	it('Scenario 2: Given a single digit 34 when I power it then it is not a Disarium (gives "Not !!")', () => {
 		expect(disarium(34)).toBe("Not !!");
 	  });
+	  it('Scenario 3: Given a double digit 89 when I power it then it is a Disarium (gives "Disarium !!")', () => {
+		expect(disarium(89)).toBe("Disarium !!");
+	  });
   });
 });
