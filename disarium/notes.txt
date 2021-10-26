@@ -1,0 +1,41 @@
+Pomodoro 1:
+- Init program
+- Write possible scenarios
+
+
+User Story 1:As a single digit number When I want to power it and add the digit So that I check if it's a Disarium or not
+
+Scenario 1: Given a single digit 1 when I power it then it is a Disarium (gives "Disarium !!")
+
+Scenario 2: Given a single digit 7 when I power it then it is a Disarium (gives "Disarium !!")
+
+
+User Story 2:As a double digit number When I want to power it and add the digit So that I check if it's a Disarium or not
+
+Scenario 1: Given a double digit 10 when I power it then it is not a Disarium (gives "Not !!")
+
+Scenario 2: Given a single digit 34 when I power it then it is not a Disarium (gives "Not !!")
+
+Scenario 3: Given a double digit 89 when I power it then it is not a Disarium (gives "Not !!")
+
+
+User Story 3:As a triple digit number When I want to power it and add the digit So that I check if it's a Disarium or not
+
+Scenario 1: Given a triple digit 200 when I power it then it is not a Disarium (gives "Not !!")
+
+Scenario 2: Given a triple digit 135 when I power it then it is a Disarium (gives "Disarium !!")
+
+Scenario 3: Given a triple digit 849 when I power it then it is not a Disarium (gives "Not !!")
+
+Scenario 4: Given a triple digit 175 when I power it then it is a Disarium (gives "Disarium !!")
+
+
+User Story 4:As a quadruple digit number When I want to power it and add the digit So that I check if it's a Disarium or not
+
+Scenario 1: Given a quadruple digit 2000 when I power it then it is not a Disarium (gives "Not !!")
+
+Scenario 2: Given a quadruple digit 1306 when I power it then it is a Disarium (gives "Disarium !!")
+
+Scenario 3: Given a quadruple digit 1676 when I power it then it is a Disarium (gives "Disarium !!")
+
+Scenario 4: Given a quadruple digit 1735 when I power it then it is not a Disarium (gives "Not !!")
