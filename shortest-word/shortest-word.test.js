@@ -11,5 +11,8 @@ describe("Shortest Word", () => {
 	it("Scenario 3: Given a sentence with 2 words ['cv npm'] with different lengths then I get length = 2", () => {
 		expect(shortestWord('cv npm')).toBe(2);
 	});
+	it("Scenario 4: Given a sentence with 3 words ['I do know'] then I get get length = 1", () => {
+		expect(shortestWord('I do know')).toBe(1);
+	});
   });
 });
