@@ -8,5 +8,8 @@ describe("Shortest Word", () => {
 	it("Scenario 2: Given a sentence with 2 words ['cv np'] with the same length when I find the minimum length then I get length = 2", () => {
 		expect(shortestWord('cv np')).toBe(2);
 	});
+	it("Scenario 3: Given a sentence with 2 words ['cv npm'] with different lengths then I get length = 2", () => {
+		expect(shortestWord('cv npm')).toBe(2);
+	});
   });
 });
