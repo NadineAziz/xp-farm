@@ -1,7 +1,5 @@
 function shortestWord(sentence) {
-  sentenceArray = sentence.split(" ");
-  sentence = sentenceArray.sort((a, b) => a.length - b.length);
-  return sentence[0].length;
+  return Math.min(...sentence.split(" ").map (s => s.length));
 }
 module.exports = {
   shortestWord,
