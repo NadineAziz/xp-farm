@@ -1,5 +1,5 @@
 function shortestWord(sentence){
-	return sentence;
+	return 1;
 }
 
 module.exports = {
