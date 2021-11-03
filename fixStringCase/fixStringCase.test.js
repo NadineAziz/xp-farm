@@ -19,5 +19,8 @@ describe("Fix String Case", () => {
     it(`Scenario 3:Given a string 'leT' when I check the upper: lower case ratio then it returns 'let'`, () => {
       expect(fixStringCase("leT")).toBe("let");
     });
+	it(`Scenario 4:Given a string 'LEt' when I check the upper: lower case ratio then it returns 'LET'`, () => {
+		expect(fixStringCase("LEt")).toBe("LET");
+	  });
   });
 });
