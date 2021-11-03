@@ -1,5 +1,5 @@
 function fixStringCase(s){
-	return 0;
+	return s;
 }
 
 module.exports = {
