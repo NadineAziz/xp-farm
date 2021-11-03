@@ -9,4 +9,9 @@ describe("Fix String Case", () => {
       expect(fixStringCase("T")).toBe("T");
     });
   });
+  describe("User Story 2:As a mixed case string I want to check the upper and lower case letters so that I change the word accordingly", () => {
+    it(`Scenario 1:Given a string 'cs' when I check the upper: lower case ratio then it returns 'cs'`, () => {
+      expect(fixStringCase("cs")).toBe("cs");
+    });
+  });
 });
