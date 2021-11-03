@@ -13,5 +13,8 @@ describe("Fix String Case", () => {
     it(`Scenario 1:Given a string 'cs' when I check the upper: lower case ratio then it returns 'cs'`, () => {
       expect(fixStringCase("cs")).toBe("cs");
     });
+    it(`Scenario 2:Given a string 'TO' when I check the upper: lower case ratio then it returns 'TO'`, () => {
+      expect(fixStringCase("TO")).toBe("TO");
+    });
   });
 });
